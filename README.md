@@ -1,8 +1,8 @@
-SPOTIFY VS. YOUTUBE - MUSIC
+SPOTIFY VS. YOUTUBE: MUSIC
 
-A Personal Project on Youtube vs. Spotify
+A Personal Project on Youtube vs. Spotify Music
 
-In this project, we explore the relationship between Youtube and Spotify as music streamig platforms,  when they were created, and the most popular themes behind these sets.
+In this project, we explore the relationships between the variables in the data, the differences between artists' popularity on Youtube and Spotify, and the most popular themes behind these sets.
 
 Acquire the Data:
 
@@ -37,8 +37,6 @@ Explore the Data:
 1. Lets see which variables are correlated.
 
 <img width="1011" alt="Screen Shot 2023-04-18 at 8 06 33 PM" src="https://user-images.githubusercontent.com/123396488/232930748-cf947aa8-a855-40c1-a2c6-23ec756b048f.png">
-
-
 
 2. Next, let's examine the distribution of the streams column. Do we have any outliers?
 
