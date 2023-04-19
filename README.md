@@ -1,3 +1,5 @@
+SPOTIFY VS. YOUTUBE - MUSIC
+
 A Personal Project on Youtube vs. Spotify
 
 In this project, we explore the relationship between Youtube and Spotify as music streamig platforms,  when they were created, and the most popular themes behind these sets.
@@ -34,10 +36,15 @@ Explore the Data:
 
 1. Lets see which variables are correlated.
 
-Interesting takeaways:
+<img width="1011" alt="Screen Shot 2023-04-18 at 8 06 33 PM" src="https://user-images.githubusercontent.com/123396488/232930748-cf947aa8-a855-40c1-a2c6-23ec756b048f.png">
+
+
 
 2. Next, let's examine the distribution of the streams column. Do we have any outliers?
 
 Visualize the Data:
 
-Import CSVs into Tableau Public, link the data sources, create a dashboard with visualizations
+1. Import CSVs into Tableau Public, link the data sources, create a dashboard with visualizations
+
+<img width="657" alt="Screen Shot 2023-04-19 at 12 30 18 PM" src="https://user-images.githubusercontent.com/123396488/233140615-94814063-aa29-467e-90db-9a88853f13a2.png">
+
