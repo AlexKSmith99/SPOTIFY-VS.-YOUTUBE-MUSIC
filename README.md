@@ -8,7 +8,7 @@ Acquire the Data:
 
 We got this data from Kaggle: https://www.kaggle.com/datasets/salvatorerastelli/spotify-and-youtube
 
-We are using the following csvs: sets.csv and themes.csv
+We are using the following csvs: Spotify_Youtube.csv
 
 Clean the Data:
 
