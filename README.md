@@ -38,8 +38,6 @@ Explore the Data:
 
 <img width="1011" alt="Screen Shot 2023-04-18 at 8 06 33 PM" src="https://user-images.githubusercontent.com/123396488/232930748-cf947aa8-a855-40c1-a2c6-23ec756b048f.png">
 
-2. Next, let's examine the distribution of the streams column. Do we have any outliers?
-
 Visualize the Data:
 
 1. Import CSVs into Tableau Public, link the data sources, create a dashboard with visualizations
