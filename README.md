@@ -22,7 +22,7 @@ Clean the Data:
 <img width="1116" alt="Screen Shot 2023-04-18 at 6 12 36 PM" src="https://user-images.githubusercontent.com/123396488/232916949-b5c7acfe-077d-466a-b7f0-17da2e582ec8.png">
 
 
-3. We noticed a null value earlier in the themes dataset. Let's count the nulls.
+3. We noticed a null value earlier in the dataset. Let's count the nulls.
 
 <img width="277" alt="Screen Shot 2023-04-18 at 6 16 06 PM" src="https://user-images.githubusercontent.com/123396488/232917112-739747b1-e099-49de-b35c-cdfd9b015f3d.png">
 
