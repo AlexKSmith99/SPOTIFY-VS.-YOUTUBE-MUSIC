@@ -42,7 +42,7 @@ Visualize the Data:
 
 1. Import CSVs into Tableau Public, link the data sources, create a dashboard with visualizations
 
-View my Tableau Public for interactive model: https://public.tableau.com/app/profile/alexander.smith3332/viz/Youtubevs_Spotify-MusicDashboard/Dashboard1
+Interact with this dashboard on my Tableau Public: https://public.tableau.com/app/profile/alexander.smith3332/viz/Youtubevs_Spotify-MusicDashboard/Dashboard1
 
 <img width="657" alt="Screen Shot 2023-04-19 at 12 30 18 PM" src="https://user-images.githubusercontent.com/123396488/233140615-94814063-aa29-467e-90db-9a88853f13a2.png">
 
