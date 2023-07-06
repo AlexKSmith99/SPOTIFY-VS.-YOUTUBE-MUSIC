@@ -1,8 +1,10 @@
-**#SPOTIFY-VS.-YOUTUBE:-MUSIC**
+**#SPOTIFY VS. YOUTUBE:MUSIC**
 
 A Personal Project on Youtube vs. Spotify Music
 
 In this project, we explore the relationships between the variables in the data, the differences between artists' popularity on Youtube and Spotify, and impliment creative filtering to deliver key insights on specific data points.
+
+Data Tools: Python, Tableau
 
 Acquire the Data:
 
