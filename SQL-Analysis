@@ -1,0 +1,109 @@
+SQL ANALYSIS: EDA + DATA ANALYSIS + RECOMMENDATIONS
+
+SELECT *  
+From Spotify_Youtube ;
+
+
+**EXPLORATORY DATA ANALYSIS**
+
+-- Check the number of unique apps in the dataset
+
+SELECT COUNT(DISTINCT ID) 
+from Spotify_Youtube ;
+
+-- Check for any missing values in key fields
+
+SELECT count(*) 
+From Spotify_Youtube 
+WHERE ID IS NULL or Stream is NULL or Views is NULL ;
+
+--Find out the number of albums per artist
+
+SELECT count(Album) as NumAlbums, Artist 
+from Spotify_Youtube 
+group by Artist 
+order by NumAlbums DESC  ;
+
+--Find out the number of singles per artist
+
+SELECT count(*) as NumAlbums, Artist 
+from Spotify_Youtube
+WHERE Album_type = 'single'
+group by Artist 
+order by NumAlbums desc ;
+
+-- Get an overview of Album's Energy levels
+
+SELECT min(Energy), max(energy), avg(Energy)
+From Spotify_Youtube ;
+
+-- Determine whether there are more total views or streams recorded  
+
+SELECT COUNT(views) as NumViews, COUNT(stream) as NumStreams
+from Spotify_Youtube ;
+
+--How're they distributed?
+
+**DATA ANALYSIS**
+
+-- Determine whether singles have higher durations then album tracks
+
+
+SELECT (SELECT AVG(Duration_ms) as AvgDurAlbTr
+FROM Spotify_Youtube 
+WHERE Album_type = 'album'), AVG(Duration_ms) as AvgDurSing
+From Spotify_Youtube 
+WHERE Album_type = 'single';
+
+-- Determine which Artists have the loudest music
+
+SELECT artist, AVG(Loudness) as AvgLoud
+from Spotify_Youtube 
+group by Artist 
+ORDER by AvgLoud DESC  
+LIMIT 5;
+
+-- Check if tracks with high Danceability have higher streams 
+
+SELECT CASE 
+			WHEN Danceability > '0.66' then 'High Danceability'
+			WHEN Danceability  BETWEEN '0.33' AND '0.66' then 'Mid Danceability'
+			WHEN Danceability < '0.33' then 'Low Danceability'
+		END AS DanceabilityRating, AVG(Stream) as AvgStream
+FROM Spotify_Youtube 	
+group by DanceabilityRating
+ORDER by AvgStream DESC 
+		;
+	
+-- -- Check if tracks with high Energy have higher Views
+	
+	SELECT CASE 
+			WHEN Energy  > '0.66' then 'High Energy'
+			WHEN Energy  BETWEEN '0.33' AND '0.66' then 'Mid Energy'
+			WHEN Energy  < '0.33' then 'Low Energy'
+		END AS EnergyRating, AVG(Views) as AvgViews
+FROM Spotify_Youtube 	
+group by EnergyRating
+ORDER by AvgViews DESC 
+		;
+	
+-- Check Artists with most acousticness
+	
+SELECT Artist, AVG(Acousticness) as AvgAcousticness
+from Spotify_Youtube
+group by Artist  
+ORDER by AvgAcousticness Desc;
+
+**RECOMMENDATIONS/INSIGHTS**
+
+1. Singles are shorter in duration than Album tracks on average 
+2. Longer tracks by duration perform better on spotify than YouTube & Shorter tracks perform better on YouTube
+3. By this logic, singles perform better on YouTube than Spotify.
+4. Danceability is positively correlated with Streams
+5. Energy is positively correlated with Views
+
+
+
+
+
+
